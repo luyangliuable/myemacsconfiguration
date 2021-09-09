@@ -248,12 +248,9 @@ It should only modify the values of Spacemacs settings."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press `SPC T n' to cycle to the next theme in the list (works great
    dotspacemacs-themes '(
-                         doom-shades-of-purple
-                         solarized
+                         solarized-dark
                          tao-yang
-                         zenburn
-                         solarized-dark-high-contrast
-                         spacemacs-light)
+                         zenburn)
 
    ;; Set the theme for the Spaceline. Supported themes are `spacemacs',
    ;; `all-the-icons', `custom', `doom', `vim-powerline' and `vanilla'. The
@@ -576,6 +573,7 @@ Put your configuration code here, except for variables that should be set
 before packages are loaded."
   (beacon-mode 1)
   (blink-cursor-mode 1)
+  (selectric-mode 1)
 )
 
 
@@ -592,7 +590,7 @@ This function is called at the very end of Spacemacs initialization."
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-   '("7f1d414afda803f3244c6fb4c2c64bea44dac040ed3731ec9d75275b9e831fe5" "75a8194e6aa3ef759e8512fb6149137e2ada5947a7424e4278c395e374835afe" "3a9f65e0004068ecf4cf31f4e68ba49af56993c20258f3a49e06638c825fbfb6" "801a567c87755fe65d0484cb2bded31a4c5bb24fd1fe0ed11e6c02254017acb2" default))
+   '("4c56af497ddf0e30f65a7232a8ee21b3d62a8c332c6b268c81e9ea99b11da0d3" "fee7287586b17efbfda432f05539b58e86e059e78006ce9237b8732fde991b4c" "7f1d414afda803f3244c6fb4c2c64bea44dac040ed3731ec9d75275b9e831fe5" "75a8194e6aa3ef759e8512fb6149137e2ada5947a7424e4278c395e374835afe" "3a9f65e0004068ecf4cf31f4e68ba49af56993c20258f3a49e06638c825fbfb6" "801a567c87755fe65d0484cb2bded31a4c5bb24fd1fe0ed11e6c02254017acb2" default))
  '(evil-want-Y-yank-to-eol nil)
  '(exwm-floating-border-color "#1e1e3f")
  '(fci-rule-color "#FFFFF8")
@@ -656,5 +654,5 @@ This function is called at the very end of Spacemacs initialization."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(default ((((class color) (min-colors 89)) (:foreground "#839496" :background "#002b36")))))
 )

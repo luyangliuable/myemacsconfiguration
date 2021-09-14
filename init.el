@@ -7,7 +7,6 @@
 This function should only modify configuration layer settings."
   (setq-default
    ;; Base distribution to use. This is a layer contained in the directory
-
    ;; `+distribution'. For now available distributions are `spacemacs-base'
    ;; or `spacemacs'. (default 'spacemacs)
    dotspacemacs-distribution 'spacemacs
@@ -40,6 +39,7 @@ This function should only modify configuration layer settings."
      ;; ----------------------------------------------------------------
      yaml
      html
+     php
      ;; auto-completion
      lsp
      themes-megapack
@@ -50,7 +50,7 @@ This function should only modify configuration layer settings."
      java
      xkcd
      emacs-lisp
-     ;; better-defaults
+     better-defaults
      json
      git
      helm
@@ -82,7 +82,6 @@ This function should only modify configuration layer settings."
    ;; this file). If you need some configuration for these packages, then
    ;; consider creating a layer. You can also put the configuration in
    ;; `dotspacemacs/user-config'. To use a local version of a package, use the
-
 ;; `:location' property: '(your-package :location "~/path/to/your-package/")
    ;; Also include the dependencies as they will not be resolved automatically.
    dotspacemacs-additional-packages '(
